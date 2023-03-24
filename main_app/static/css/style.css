@@ -1,7 +1,6 @@
 body {
     text-align: center;
     margin: 2rem;
-    background-color: rgb(206, 255, 239);
 }
 
 table {
@@ -11,4 +10,9 @@ table {
 table a {
     color: red;
     text-decoration: none;
+}
+
+button a {
+    text-decoration: none;
+    color: rgb(41, 41, 41)
 }

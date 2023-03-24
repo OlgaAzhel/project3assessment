@@ -5,8 +5,8 @@ from django.views.generic.edit import CreateView, DeleteView
 # Create your views here.
 
 def wishes_index(request):
-    # wishes = Wish.objects.all()
-    return render(request, 'index.html')
+    wishes = Wish.objects.all()
+    return render(request, 'index.html', {'wishes': wishes})
 
 
 class WishCreate(CreateView):
@@ -16,4 +16,4 @@ class WishCreate(CreateView):
 
 class WishDelete(DeleteView):
   model = Wish
-  success_url = '/index'
+  success_url = '/'
